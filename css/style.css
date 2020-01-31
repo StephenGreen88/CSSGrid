@@ -1,7 +1,4 @@
-.wrapper {
-    display: grid;
-}
-
+/* Adding some light styling so we can see the differences in the grid */
 .wrapper div {
     background: #eee;
     padding: 1em;
@@ -9,4 +6,15 @@
 
 .wrapper div:nth-child(odd) {
     background: #ddd;
+}
+
+/* Setting up the wrapper in a grid */
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* This creates space between the columns and grid-row-gap creates space between rows
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;*/
+    /* If you're going to do the same size gap between columns and rows you'll use the following */ 
+    grid-gap: 1em;
 }
